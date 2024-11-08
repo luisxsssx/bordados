@@ -1,0 +1,97 @@
+.page-border {
+    border-left: 15px;
+    border-right: 15px;
+    padding: 0 18px;
+}
+
+.hero {
+    background-color: #00509d;
+    color: #000;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.hero-image {
+    max-width: 80%;
+}
+
+.hero .btn-primary {
+    border: 1px solid #4a5eff;
+    color: #4a5eff;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.hero .btn-primary:hover {
+    background-color: #4a5eff;
+    color: #fff;
+}
+
+.product-card {
+    border: none;
+}
+
+.product-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.section-title {
+    font-weight: bold;
+    text-align: center;
+    color: #4a5eff;
+    margin-top: 2rem;
+}
+
+.popular-products .row {
+    align-items: center;
+}
+
+.popular-products .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 250px;
+}
+
+.popular-products img.card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.popular-products .product-card {
+    padding: 1rem;
+}
+
+.popular-products .product-card img.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.popular-products .product-card .card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card-back {
+    border-radius: 1vh;
+    background-color: #669bbc;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 2vh;
+}
