@@ -7,5 +7,5 @@
     }).addTo(map);
 
     var marker = L.marker([25.564030713268885, -108.45986466863316]).addTo(map);
-    marker.bindPopup("<b>Uniformes Y Bordados Sandoval</b><br>Centro, 81000 Guasave, Sin.").openPopup();
+    marker.bindPopup("<b>Uniformes Y Bordados Sandoval</b><br>Calle Norzagaray #102 entre Cuauhtemoc y Dr. de la Torre 81000 Guasave, Sinaloa, Mexico").openPopup();
 });

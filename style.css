@@ -1,97 +1,176 @@
+/* Variables de colores */
+:root {
+    --primary-color: #4a5eff;
+    --secondary-color: #778da9;
+    --text-color: #333;
+}
+
+/* Estilo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .page-border {
-    border-left: 15px;
-    border-right: 15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
     padding: 0 18px;
 }
 
+.hero-image {
+    width: 48vh;
+}
+
+/* Sección Hero */
 .hero {
-    background-color: #00509d;
+    background-color: var(--secondary-color);
     color: #000;
-    padding: 4rem 2rem;
-    text-align: left;
+    padding: 8rem 8rem;
+    text-align: center;
 }
 
 .hero h1 {
     font-weight: bold;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: var(--text-color);
 }
 
 .hero-image {
-    max-width: 80%;
+    margin-left: 55rem;
 }
 
-.hero .btn-primary {
-    border: 1px solid #4a5eff;
-    color: #4a5eff;
-    background-color: transparent;
-    font-weight: bold;
-}
-
-.hero .btn-primary:hover {
-    background-color: #4a5eff;
-    color: #fff;
-}
-
-.product-card {
-    border: none;
-}
-
-.product-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: black;
-    color: white;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.75rem;
-    font-weight: bold;
-}
-
+/* Títulos de sección */
 .section-title {
     font-weight: bold;
     text-align: center;
-    color: #4a5eff;
+    color: var(--primary-color);
     margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-.popular-products .row {
-    align-items: center;
-}
 
-.popular-products .card-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 250px;
-}
-
-.popular-products img.card-img-top {
-    max-height: 250px;
-    object-fit: cover;
-}
-
-.popular-products .product-card {
-    padding: 1rem;
-}
-
-.popular-products .product-card img.card-img-top {
-    width: 100%;
-    height: auto;
-}
-
-.popular-products .product-card .card-text {
-    font-size: 1rem;
-    color: #333;
-}
-
-.card-back {
-    border-radius: 1vh;
-    background-color: #669bbc;
-}
-
+/* Estilos para el mapa */
 #map {
     height: 500px;
     width: 100%;
     margin-top: 20px;
+    padding: 1rem;
     border-radius: 2vh;
+}
+
+.svg {
+    height: 10%;
+}
+
+.location-image {
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 2vh;
+}
+
+.bor {
+    height: 553px;
+    width: 670px;
+    margin-top: 5px;
+    border-radius: 2vh;
+}
+
+/* Ajuste de la galería de productos */
+.gallery {
+    padding: 2rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+
+    /* Ajustes en la sección Hero */
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* Ajustes en los títulos de sección */
+    .section-title {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* Mapa */
+    #map {
+        height: 300px;
+    }
+
+    /* Imagen de local */
+    .location-image {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Galería de productos */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    /* Ajustes en la galería */
+    .gallery-item {
+        border-radius: 6px;
+    }
+
+    /* Ajuste de bordes de otros elementos */
+    .bor {
+        width: 100%;
+        height: auto;
+    }
 }
